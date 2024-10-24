@@ -1,0 +1,23 @@
+print('\nMenu')
+print(' 1 - para lista de dados')
+print(' 2 - para lista de meses')
+print(' 3 - para sair')
+
+variavel = int(input("\nDigite o opcao desejada: "))
+if variavel == 1:
+    
+    nome = input('Digite o nome:')
+    sobrenome= input('Digite o sobrenome:')
+    idade = int(input('Digite a idade: '))
+    lista =[nome, sobrenome, idade]
+    print(lista[0], lista[1], lista[2])
+    
+elif variavel ==2:
+    meses = ['janeiro', 'fevereiro', 'marco','abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+
+    print('Digite o numero correspondente ao mes:')
+
+    opcao= input('igite o numero do mes que você quer meu filho: ')
+    print(meses[int(opcao) -1])
+else:
+    print("Saindo...")
